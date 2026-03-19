@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp7B.MainPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="30" Spacing="25" HorizontalOptions="Center">
+
+        <Label Text="Bombillo con if/else" 
+               FontSize="25" 
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <!-- Usamos un Emoji como bombillo: ¡Esto NUNCA falla! -->
+        <Label x:Name="bombilloEmoji"
+               Text="⚫"
+               FontSize="120"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Button Text="Cambiar estado"
+                FontSize="18"
+                BackgroundColor="#512BD4"
+                TextColor="White"
+                CornerRadius="10"
+                Clicked="OnBotonClicked_IfElse" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
